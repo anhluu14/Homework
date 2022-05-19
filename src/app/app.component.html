@@ -301,7 +301,30 @@
     }
   }
 </style>
+<h2>Get Request (https://jsonplaceholder.typicode.com/posts/id)</h2>
 
+<table>
+    <tr>
+        <th>Users:</th>
+        <th>1. Username #1 posted X messages in total</th>
+        <th>2. Username #2 posted X messages in total</th>
+        <th>3. Username #3 posted X messages in total</th>
+        <th>4. Username #4 posted X messages in total</th>
+        <th>5. Username #5 posted X messages in total</th>
+        <th>6. Username #6 posted X messages in total</th>
+        <th>7. Username #7 posted X messages in total</th>
+        <th>8. Username #8 posted X messages in total</th>
+        <th>9. Username #9 posted X messages in total</th>
+        <th>10. Username #10 posted X messages in total</th>
+    </tr>
+
+    <tr *ngFor="let com of lstcomments">
+      <td>{{com.userId}}</td>
+      <td>{{com.id}}</td>
+      <td>{{com.title}}</td>
+      <td>{{com.body}}</td> 
+    </tr>
+</table>
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
@@ -341,7 +364,7 @@
       </g>
     </svg>
 
-    <span>{{ title }} app is running!</span>
+    <span>{ title } app is running!</span>
 
     <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <title>Rocket Ship Smoke</title>
@@ -481,4 +504,4 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<router-outlet></router-outlet>
+
