@@ -27,7 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 Passing id parameter  return the list users
-100 posts và 10 users in total
+100 posts and 10 users in total
 Fetch all 10 users assign username and userId into returnInfo
 Make another api call to fetch 100 posts with loop
 increment user count of post when meet a post
